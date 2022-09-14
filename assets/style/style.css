@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2vmax;
+
+  text-align: center;
+  overflow-x: hidden;
+}
+
+body h1 {
+  font-style: italic;
+  text-decoration: line-through;
+
+  margin-top: 1vmax;
+}
+
+.invisible {
+  display: none;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.spanRigth {
+  font-size: 7.5vmax;
+}
+
+.spanLeft {
+  font-size: 7.5vmax;
+}
+
+.estadio {
+  width: 40vmax;
+  height: 40vmax;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bloco {
+  border: solid black 0.3vmax;
+  border-radius: 0.5vmax;
+
+  width: 13vmax;
+  height: 13vmax;
+}
+
+.linhaDeCima,
+.linhaDoMeio,
+.linhaDeBaixo {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+}
+
+#bloco1 {
+  border-top: white;
+  border-left: white;
+}
+#bloco2 {
+  border-top: white;
+}
+#bloco3 {
+  border-top: white;
+  border-right: white;
+}
+
+#bloco4 {
+  border-left: white;
+}
+#bloco6 {
+  border-right: white;
+}
+
+#bloco7 {
+  border-bottom: white;
+  border-left: white;
+}
+#bloco8 {
+  border-bottom: white;
+}
+#bloco9 {
+  border-bottom: white;
+  border-right: white;
+}
+
+@media (max-width: 575px) {
+  .container {
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  .spanRigth {
+    font-size: 7.5vmax;
+
+    margin-bottom: 5vmax;
+  }
+
+  .spanLeft {
+    order: -1;
+
+    font-size: 7.5vmax;
+
+    margin-bottom: 5vmax;
+  }
+}
