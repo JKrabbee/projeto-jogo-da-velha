@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2vmax;
+
+  overflow-x: hidden;
+}
+
+.titles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body h1 {
+  display: inline-block;
+
+  font-style: italic;
+  text-decoration: line-through;
+
+  margin-top: 1vmax;
+}
+
+.invisible {
+  display: none;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.spanRigth {
+  font-size: 7.5vmax;
+}
+
+.spanLeft {
+  font-size: 7.5vmax;
+}
+
+.estadio {
+  width: 40vmax;
+  height: 40vmax;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bloco {
+  position: relative;
+  border: solid black 0.3vmax;
+  border-radius: 0.5vmax;
+
+  width: 13vmax;
+  height: 13vmax;
+}
+
+.linhaDeCima,
+.linhaDoMeio,
+.linhaDeBaixo {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+}
+
+.b0 {
+  border-top: white;
+  border-left: white;
+}
+.b1 {
+  border-top: white;
+}
+.b2 {
+  border-top: white;
+  border-right: white;
+}
+
+.b3 {
+  border-left: white;
+}
+.b5 {
+  border-right: white;
+}
+
+.b6 {
+  border-bottom: white;
+  border-left: white;
+}
+.b7 {
+  border-bottom: white;
+}
+.b8 {
+  border-bottom: white;
+  border-right: white;
+}
+
+.reset {
+  position: absolute;
+
+  right: 8vmax;
+
+  font-size: 3.5vmax;
+}
+
+.o::after {
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  content: "⭕";
+
+  font-size: 7.5vmax;
+}
+
+.x::after {
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  content: "❌";
+
+  font-size: 7.5vmax;
+}
+
+@media (max-width: 575px) {
+  .container {
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  .spanRigth {
+    font-size: 7.5vmax;
+
+    margin-bottom: 5vmax;
+  }
+
+  .spanLeft {
+    order: -1;
+
+    font-size: 7.5vmax;
+
+    margin-bottom: 5vmax;
+  }
+}

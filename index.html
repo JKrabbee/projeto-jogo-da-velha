@@ -5,9 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/assets/style/style.css" />
-    <title>Document</title>
+    <title>Jogo da Velha</title>
   </head>
   <body>
+    <div class="titles">
+      <h1>Jogo Da Velha</h1>
+      <span onclick="reset()" class="reset" id="reset"> 🔄 </span>
+    </div>
+    <div class="container">
+      <span class="spanRigth invisible"></span>
+      <span class="spanRigth">❌</span>
+      <div class="estadio">
+        <div class="linhaDeCima">
+          <div id="0" class="bloco b0"></div>
+          <div id="1" class="bloco b1"></div>
+          <div id="2" class="bloco b2"></div>
+        </div>
+        <div class="linhaDoMeio">
+          <div id="3" class="bloco b3"></div>
+          <div id="4" class="bloco b4"></div>
+          <div id="5" class="bloco b5"></div>
+        </div>
+        <div class="linhaDeBaixo">
+          <div id="6" class="bloco b6"></div>
+          <div id="7" class="bloco b7"></div>
+          <div id="8" class="bloco b8"></div>
+        </div>
+      </div>
+      <span class="spanLeft">⭕</span>
+      <span class="spanLeft invisible"></span>
+    </div>
+
     <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/interface.js"></script>
   </body>
 </html>
