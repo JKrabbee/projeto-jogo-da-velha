@@ -7,11 +7,18 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2vmax;
 
-  text-align: center;
   overflow-x: hidden;
 }
 
+.titles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 body h1 {
+  display: inline-block;
+
   font-style: italic;
   text-decoration: line-through;
 
@@ -50,6 +57,7 @@ body h1 {
 }
 
 .bloco {
+  position: relative;
   border: solid black 0.3vmax;
   border-radius: 0.5vmax;
 
@@ -66,35 +74,69 @@ body h1 {
   justify-content: space-between;
 }
 
-#bloco1 {
+.b0 {
   border-top: white;
   border-left: white;
 }
-#bloco2 {
+.b1 {
   border-top: white;
 }
-#bloco3 {
+.b2 {
   border-top: white;
   border-right: white;
 }
 
-#bloco4 {
+.b3 {
   border-left: white;
 }
-#bloco6 {
+.b5 {
   border-right: white;
 }
 
-#bloco7 {
+.b6 {
   border-bottom: white;
   border-left: white;
 }
-#bloco8 {
+.b7 {
   border-bottom: white;
 }
-#bloco9 {
+.b8 {
   border-bottom: white;
   border-right: white;
+}
+
+.reset {
+  position: absolute;
+
+  right: 8vmax;
+
+  font-size: 3.5vmax;
+}
+
+.o::after {
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  content: "⭕";
+
+  font-size: 7.5vmax;
+}
+
+.x::after {
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  content: "❌";
+
+  font-size: 7.5vmax;
 }
 
 @media (max-width: 575px) {
